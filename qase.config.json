@@ -1,0 +1,12 @@
+{
+  "mode": "testops",
+  "testops": {
+    "project": "AUTO",
+    "api": {
+      "token": ""
+    },
+    "run": {
+      "title": "GitHub Automation Run"
+    }
+  }
+}
