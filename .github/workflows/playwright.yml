@@ -67,5 +67,5 @@ jobs:
       
           from: GitHub Actions <${{ secrets.EMAIL_USERNAME }}>
       
-          html_body: file://reports/mail.html
+          html_body: file://reports/mail_template.html
                 
