@@ -54,15 +54,7 @@ jobs:
           secure: true
           username: ${{ secrets.EMAIL_USERNAME }}
           password: ${{ secrets.EMAIL_PASSWORD }}
-          subject: "Automation Test Report"
+          subject: Automation Test Report - ${{ job.status }}
           to: rdlipika16@gmail.com,rahul@everflourish.in
           from: GitHub Actions <${{ secrets.EMAIL_USERNAME }}>
-          body: |
-            Automation execution completed.
-      
-            Status: ${{ job.status }}
-
-            GitHub Run:
-            https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
-      
-          attachments: allure-report.zip
+          html_body: file:reports/report.html
