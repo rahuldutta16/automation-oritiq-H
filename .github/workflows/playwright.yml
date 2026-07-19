@@ -61,14 +61,5 @@ jobs:
       
           from: GitHub Actions <${{ secrets.EMAIL_USERNAME }}>
       
-          body: |
-            Automation execution completed.
-      
-            Status: ${{ job.status }}
-      
-            Repository: ${{ github.repository }}
-            Branch: ${{ github.ref_name }}
-      
-            GitHub Run:
-            https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          html_body: file://reports/mail.html
                 
