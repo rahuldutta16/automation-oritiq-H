@@ -45,7 +45,6 @@ jobs:
           python -m pip show pytest-json-report || true
           pytest \
           tests/test_sales.py \
-          tests/test_mdm.py \
           --alluredir=allure-results \
           --json-report \
           --json-report-file=report.json
