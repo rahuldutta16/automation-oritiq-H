@@ -40,7 +40,7 @@ jobs:
           QASE_TESTOPS_API_TOKEN: ${{ secrets.QASE_TESTOPS_API_TOKEN }}
           QASE_TESTOPS_PROJECT: ${{ secrets.QASE_TESTOPS_PROJECT }}
           
-        run: >
+        run: |
           python -m pip show pytest-json-report || true
           pytest tests/ \
           --alluredir=allure-results \
